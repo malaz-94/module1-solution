@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app='LunchApp'>
+  <head>
+    <meta charset="utf-8" />
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<style>
+.main{
+  margin-top: 15%;
+}
+body{
+  background-color:     	#20B2AA;
+}
+</style>
+  </head>
+  <body ng-controller='LunchController'>
+    <div class="container main">
+      <input class="form-control" type="text" ng-model="name" placeholder="enter data" autofocus />
+      <br>
+      <button class="btn btn-dark" ng-click="checklunch()">check if too much</button>
+    <h2 class="text-center">  {{ msg }} </h2>
+    </div>
+  </body>
+</html>
